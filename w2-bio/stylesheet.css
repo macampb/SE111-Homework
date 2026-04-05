@@ -1,0 +1,27 @@
+body{
+    background-color:aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+
+/*Header*/
+#header{
+    text-align: center;
+}
+
+/*Navigation*/
+#nav{
+    text-align: center;
+    margin-bottom: 15px; 
+}
+a{ /*For the links*/
+    color:lightseagreen;
+    text-decoration:none; /*Removes the underline*/
+}
+
+/*Change hover color*/
+a:hover {
+  color: black;
+}
+
+
