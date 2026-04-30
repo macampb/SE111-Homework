@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"   content="Mikhala Campbell">
+    <meta name="description" content="This is a JavaScript Pay Calulator">
+    <title>Week 6 | JavaScript Pay Calculator</title>
+</head>
+<body>
+
+    <h2 style="color:blue">Pay Results</h2>
+    <h4> (Over a two-week period.)</h4>
+    <p id="output"></p>
+
+    <script>
+
+        var taxRate = 0.2
+
+        hrPay = Number(prompt("Enter User's hourly pay..."))
+        hrW = Number(prompt("Enter User's hours worked per week..."))
+        
+        function grossP(x,y){
+            return x * y 
+        }
+
+        function taxes(g,tr){
+            return g * tr
+        }
+
+        function netP(gp, tx){
+            return gp - tx
+        }
+
+        var grossPay = grossP(hrPay, hrW * 2)
+        console.log("Gross Pay: $" + grossPay)
+
+        var uncleSam = taxes(grossPay, taxRate)
+        console.log("Uncle Sam's Share: $" + uncleSam.toFixed(2))
+
+        var netPay = netP(grossPay, uncleSam)
+        console.log("Net Pay: $" + netPay.toFixed(2))
+
+        alert(
+            "Gross Pay: $" + grossPay + "\n" +
+            "Uncle Sam's Share: $" + uncleSam.toFixed(2) + "\n" +
+            "Net Pay: $" + netPay.toFixed(2)
+        )
+
+        // EXTRA CREDIT 
+        document.getElementById("output").innerText =
+         "Gross Pay: $" + grossPay + "\n" +
+        "Uncle Sam's Share: $" + uncleSam.toFixed(2) + "\n" +
+        "Net Pay: $" + netPay.toFixed(2)
+
+    </script>
+
+    
+    
+
+</body>
+</html>
