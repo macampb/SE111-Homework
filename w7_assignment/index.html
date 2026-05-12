@@ -16,33 +16,36 @@
    <!--start of the form-->
    <!--each <input> must have an id that matches its corresponding label -->
    <!--each form element is separated by a break space (new line) -->
-    <form>
-        <label for="first">First Name: </label>
-        <input type="text" id="first">
+   
+   <form>
+    <!-- TABLE CREATED FOR BONUS POINTS -->
+    <table>
+        <tbody>
+            <tr>
+            <td><label for="first">First Name: </label></td>
+            <td><input type="text" id="first"></td>
+            </tr>
 
-        <br>
+            <tr>
+            <td><label for="last">Last Name: </label></td>
+            <td><input type="text" id="last"></td>
+            </tr>
 
-        <label for="last">Last Name: </label>
-        <input type="text" id="last">
+            <tr>
+            <td><label for="hours">Hours Worked: </label></td>
+            <td><input type="text" id="hours"></td>
+            </tr>
 
-        <br>
-
-        <label for="hours">Hours Worked: </label>
-        <input type="text" id="hours">
-
-        <br>
-
-        <label for="rate">Hourly Rate: </label>
-        <input type="text" id="rate">
-
-        <br>
-        <br>
+            <tr>
+            <td><label for="rate">Hourly Rate: </label></td>
+            <td><input type="text" id="rate"></td>
+            </tr>
 
         <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-        <input type="button" id="enter-button" value="Enter">
-
-        <br>
-        <br>
+        <tr>
+            <td> <input type="button" id="enter-button" value="Enter"></td></tr>
+    </tbody>
+    </table> 
 
         <div id="final" style="border:1px solid rgb(87, 86, 86); padding:15px; background-color:rgb(168, 168, 168);">
 
